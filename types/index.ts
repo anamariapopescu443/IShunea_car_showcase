@@ -17,14 +17,14 @@ export interface SearchManufacturerProps {
 }
 
 export interface CarProps {
-    city_mpg:number; // 23 "this field is for premium subscribers only" ( bcs of that I used const as example )
+    city_mpg?:number; // 23 "this field is for premium subscribers only"; ( bcs of that I used const as example )
     class:string;
-    combination_mpg:number; //24 "this field is for premium subscribers only" ( bcs of that I used const as example )
+    combination_mpg?:number;// 24 "this field is for premium subscribers only"; ( bcs of that I used const as example )
     cylinders:number;
     displacement:number;
     drive:string;
     fuel_type:string;
-    highway_mpg:number; // 26 "this field is for premium subscribers only"; ( bcs of that I used const as example )
+    highway_mpg?:number; // 26 "this field is for premium subscribers only"; ( bcs of that I used const as example )
     make:string;
     model:string;
     transmission:string;

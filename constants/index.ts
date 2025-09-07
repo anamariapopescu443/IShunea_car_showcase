@@ -99,3 +99,10 @@ export const manufacturers = [
       ],
     },
   ];
+
+  // MPG constants since API returns "premium subscribers only" for these fields
+  export const MPG_CONSTANTS = {
+    CITY_MPG: 23,
+    COMBINATION_MPG: 24,
+    HIGHWAY_MPG: 26,
+  };
