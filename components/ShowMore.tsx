@@ -4,15 +4,10 @@ import { updateSearchParams } from "@/utils";
 import { ShowMoreProps } from "@/types";
 import CustomButton from "./CustomButton";
 
-const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
-  const router = useRouter();
-
+const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {
   const handleNavigation = () => {
     const newLimit = (pageNumber + 1) * 10;
-
-    const newPathname = updateSearchParams("limit", `${newLimit}`);
-    
-    router.push(newPathname);
+    setLimit(newLimit);
   };
 
   return (
